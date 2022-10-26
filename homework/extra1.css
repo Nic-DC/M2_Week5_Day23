@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  /* height: 100vh; */
+  color: white;
+}
+
+#container {
+  /* background-color: red; */
+  display: flex;
+  height: 100vh;
+  gap: 1%;
+}
+
+.item {
+  flex-grow: 1;
+  background-color: #a32e76;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1%;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.inside-item {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  background-color: #dac1d0;
+}
