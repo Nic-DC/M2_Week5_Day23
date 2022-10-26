@@ -1,18 +1,17 @@
 body {
   margin: 0;
-  /* height: 100vh; */
+
   color: white;
 }
 
 #container {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 200vh;
 }
 
 #content {
-  flex-grow: 9;
+  flex-grow: 19;
   display: flex;
 }
 
@@ -25,12 +24,6 @@ nav {
   flex-grow: 1;
   background-color: #c22177;
 }
-
-/* main {
-  background-color: white;
-  flex-grow: 4;
-  display: flex;
-} */
 
 article {
   flex-grow: 8;
@@ -45,9 +38,14 @@ aside {
 footer {
   background-color: #111023;
   flex-grow: 1;
-  z-index: -1;
-  display: none;
 }
 
-@media screen {
+@media (min-height: 800px) {
+  nav {
+    display: none;
+  }
+
+  footer {
+    display: block;
+  }
 }
